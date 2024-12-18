@@ -20,7 +20,7 @@ A full-stack web application for managing theatre bookings and movie screenings.
 ### Backend
 - Node.js
 - Express.js
-- MongoDB
+- Postgres/docker
 - JWT Authentication
 
 ## Project Structure
@@ -68,6 +68,12 @@ npm install
 ```bash
 cd ../cinmea_backend
 npm install
+```
+
+Run the db instance through docker ( see below ) or create a user + db in the local postgres installation looking at the db.config file.
+```bash
+cd ../cinema_backend
+docker-compose up
 ```
 
 4. Start the Backend Server
